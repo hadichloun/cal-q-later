@@ -6,9 +6,10 @@ class Calculator {
     }
 
     clear() {   
-        this.currentOperand = '0'
+        this.currentOperand = ''
         this.previousOperand = ''
         this.operation = undefined
+        
 }
     delete() {
         this.currentOperand = this.currentOperand.toString().slice(0, -1)
