@@ -24,19 +24,24 @@
     border: 1px solid cyan;
     outline: none;
     background-color: rgba(255, 255, 255, .75);
+    border-radius: 55px;
   }
 
-  .calculator-grid > button:hover {
-    background-color: darkcyan;      
+  /* .calculator-grid > button:hover {
+    background-color: rgba(76, 89, 150, 0.75);
+  } */
+  .equal:hover {
+    background-color: darkred;
   }
 
-  .span-two {
-    grid-column: span 2;
-    /* border-radius: 25px; */
+  .ac:hover {
+    /* grid-column: span 2; */
+    border-radius: 10px;
+    background-color: darkorange;
   }
   .output {
     grid-column: 1 / -1;
-    background-color: rgba(0, 0, 0, .75);
+    background-color: rgba(76, 89, 150, 0.75);
     display: flex;
     align-items: flex-end;
     justify-content: space-around;
@@ -44,6 +49,9 @@
     padding: 10px;
     word-wrap: break-word;
     word-break: break-all;
+    border-radius: 50px;
+    margin: 10px;
+   
   }
   .output .previous-operand {
     color: rgba(255, 255, 255, .75);
@@ -51,6 +59,101 @@
   }
   
   .output .current-operand {
-    color: white;
+    color: rgb(152, 145, 179);
     font-size: 2.5rem;
   }
+
+
+
+
+.del-button:hover {
+  background-color: pink;
+  border-radius: 10px;
+}
+
+.divide:hover {
+  background-color: red;
+  border-radius: 10px;
+}
+.one:hover {
+  background-color: green;
+  border-radius: 10px;
+}
+.two:hover {
+  background-color: blue;
+  border-radius: 10px;
+}
+.three:hover {
+  background-color: brown;
+  border-radius: 10px;
+}
+.multiply:hover {
+  background-color: lightgreen;
+  border-radius: 10px;
+}
+.four:hover {
+  background-color: purple;
+  border-radius: 10px;
+}
+.five:hover {
+  background-color: orange;
+  border-radius: 10px;
+}
+.six:hover {
+  background-color: yellow;
+  border-radius: 10px;
+}
+
+.seven:hover {
+  background-color: cyan;
+  border-radius: 10px;
+}
+
+.eight:hover {
+  background-color: rgb(64, 89, 99);
+  border-radius: 10px;
+}
+
+.nine:hover {
+  background-color: rgb(134, 34, 50);
+  border-radius: 10px;
+}
+
+.plus:hover {
+  background-color: rgb(207, 154, 110);
+  border-radius: 10px;
+}
+
+.zero:hover {
+  background-color: rgb(182, 245, 99);
+  border-radius: 10px;
+}
+
+.period:hover {
+  background-color: rgb(116, 23, 111);
+  border-radius: 10px;
+}
+.minus:hover {
+  background-color: rgb(151, 155, 158);
+  border-radius: 10px;
+}
+
+
+
+
+
+/* 
+one
+two
+three
+multiply
+four
+five
+six
+plus
+seven
+eight
+nine
+minus
+period
+zero */
