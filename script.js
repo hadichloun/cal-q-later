@@ -5,19 +5,18 @@ class Calculator {
         this.clear()
     }
 
-    clear() {
-        this.currentOperand = ''
+    clear() {   
+        this.currentOperand = '0'
         this.previousOperand = ''
         this.operation = undefined
-    }
-
+}
     delete() {
         this.currentOperand = this.currentOperand.toString().slice(0, -1)
-
-    }
+        }
+    
     appendNumber(number) {
         if (number === '.' && this.currentOperand.includes('.')) return
-        this.currentOperand = this.currentOperand.toString() + number.toString()
+        this.currentOperand = (this.currentOperand ?? '') + number
     }
 
     chooseOperation(operation) {
@@ -52,13 +51,12 @@ class Calculator {
                     return
         }
         this.currentOperand = computation
-        this.operation = undefined
+        this.operation = 'undefined'
         this.previousOperand
     }
     updateDisplay() {
         this.currentOperandTextElement.innerText = this.currentOperand
         this.previousOperandTextElement.innerText = this.previousOperand
-
     }
 }
 
